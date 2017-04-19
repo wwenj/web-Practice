@@ -1,0 +1,538 @@
+/*浏览器初始化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:#fff; color:#555; font-size:14px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+a:hover { text-decoration:underline; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;}
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; } 
+
+.main{
+	width: 100%;
+	height: 97.3rem;
+	overflow: hidden;
+}
+   html {
+        font-size : 20px;
+    }
+    @media only screen and (min-width: 401px){
+        html {
+            font-size: 25px !important;
+        }
+    }
+    @media only screen and (min-width: 428px){
+        html {
+            font-size: 26.75px !important;
+        }
+    }
+    @media only screen and (min-width: 481px){
+        html {
+            font-size: 30px !important; 
+        }
+    }
+    @media only screen and (min-width: 569px){
+        html {
+            font-size: 35px !important; 
+        }
+    }
+    @media only screen and (min-width: 641px){
+        html {
+            font-size: 40px !important; 
+        }
+}
+@media only screen and (min-width: 750px){
+        html {
+            font-size: 40px !important;
+        }
+      	.main{
+			width: 16.3rem;
+			height: 96.8rem;
+			margin: auto;
+		}
+}
+@media only screen and (min-width: 1010px){
+        html {
+            font-size: 40px !important;
+        }
+      	.main{
+			width: 16.3rem;
+			height: 96.8rem;
+			margin: auto;
+			/*overflow: hidden;*/
+		}
+}
+
+/*所有iconfont设计*/
+@font-face {
+  font-family: 'iconfont';  /* project id 262507 */
+  src: url('//at.alicdn.com/t/font_gvhgga0hzr3mzpvi.eot');
+  src: url('//at.alicdn.com/t/font_gvhgga0hzr3mzpvi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_gvhgga0hzr3mzpvi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_gvhgga0hzr3mzpvi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_gvhgga0hzr3mzpvi.svg#iconfont') format('svg');
+}
+/*iph5  17px=1rem*/
+
+/*nav-top使用弹性布局，内容垂直居中*/
+.nav-top{
+	width: 100%;
+	height: 2.4rem;
+	background: #1a2a38;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+}
+/*.nav-top覆盖背景仿制内容覆盖*/
+.backGround{
+	width: 100%;
+	height: 2.4rem;
+}
+/*图片撑满每个图片外盒子再设置外盒子宽高*/
+img{
+	width: 100%;
+	height: 100%;
+}
+.glass{
+	width: 2.4rem;
+	height: 2.4rem;
+	text-align: center;
+	line-height: 2.4rem;
+	color: #f9b511;
+	font-family:"iconfont";
+	font-size: 1.5rem;
+}
+.logo{
+	width: 11.0rem;
+	height: 1.0rem;
+}
+/*.logo img{
+	width: 100%;
+	height: 100%;
+}*/
+.menu{
+	width: 2.4rem;
+	height: 2.4rem;
+	font-family:"iconfont";
+	font-size: 1rem;
+	text-align: center;
+	line-height: 2.4rem;
+	color: #f9b511;
+}
+
+/*广告轮播图*/
+.figure-box{
+	width: 100%;
+	height: 7.9rem;
+	border-top: 2px dashed #fdb812;
+	background: #1a2a38;
+	position: relative;
+	/*overflow: hidden;*/
+}
+.figure{
+	width: 300%;
+	height: 7.9rem;
+	position: absolute;
+	left: -100%;
+	/*left: -16rem;*/
+}
+.figure ul li{
+	width:33.3%;
+	height:7.9rem;
+	float: left;
+/*	border-left: 1px solid #FFFFFF;*/
+}
+.figure li img{
+	width: 100%;
+	height:100%;
+}
+/*小图标导航*/
+.nav-pic{
+	width: 100%;
+	height: 9.5rem;
+	/*border-bottom: 1px solid black;*/
+}
+.pic-ul{
+	width:88%;
+	height: 100%;
+	margin: auto;
+	/*border: 1px solid black;*/
+}
+.nav-pic li{
+	width: 20%;
+	height: 4rem;
+	  float: left;
+    margin: 3% 0 0 6.5%;
+   /* border: 1px solid black;*/
+}
+.nav-pic li span{
+	width: 100%;
+	height: 3rem;
+    display: block;
+    color: #f9b511;
+    background: #1a2a38;
+    border-radius: 5px;
+}
+.nav-pic li strong{
+   color: #000;
+    font-size: 0.6rem;
+    margin-top: 4%;
+    display: block;
+    text-align: center;
+  	font-weight: bold;
+}
+.iconfont{
+	font-family:"iconfont";
+	font-size: 2rem; 
+	font-style:normal;
+	-webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale; 
+    text-align: center;
+   line-height: 3rem;
+}
+/*点击查询*/
+.glass-box{
+	width: 100%;
+	height: 2.4rem;
+	display: none;
+	background: #47b254;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.glass-box span{
+	text-align: center;
+	line-height: 2.4rem;
+	color: #fff;
+	margin-left: 0.5rem;
+	font-family:"iconfont";
+	font-size: 1rem;
+}
+.inputBox{
+	width: 70%;
+	height: 1.3rem;
+	position: relative;
+	float: right;
+	margin-right: 10%;
+	margin-top: 0.4rem;
+}
+.glass-box a{
+	font-family:"iconfont";
+	font-size: 1.2rem;
+	color: #ccc;
+	position: absolute;
+	top:0rem;
+	right: 1%;
+}
+.inpGlass{
+	width: 100%;
+	height: 100%;
+	padding-left:5% ;
+	font-size: 0.6rem;
+	border-radius: 1.17rem;
+}
+/*侧面展开菜单*/
+.menu-left{
+	width: 0;
+	height:34rem;
+	background:black;/*0152b5*/
+	opacity: 0.8;
+	position: fixed;
+	top: 0;
+	right:0;
+	bottom: 0;
+	z-index: 2;
+	display: none;
+	z-index: 5;
+}
+.menu-left li  ul{
+	height:34rem;
+}
+.menu-left li a{
+	color: white;
+}
+.menu-left li{
+	width: 100%;
+	height: 2.5rem;
+	font-size: 1rem;
+	line-height: 3rem;
+	text-align: center;
+	border-bottom: 1px solid #FFFFFF;
+}
+/*点击消失叉*/
+.menu-left span{
+	display: block;
+	font-size: 1.5rem;
+	text-align: center;
+	color: #FFFFFF;
+	position: absolute;
+	top: 0;
+	left: -18%;
+}
+/*遮罩层*/
+.mask{
+	width: 100%;
+	height: 34rem;
+	background: #000000;
+	opacity: 0;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 4;
+}
+
+/*第一个黄背景*/
+.contert1-box{
+	width: 100%;
+	height: 7rem;
+	background: #fdb812;
+	/*overflow: hidden;*/
+}
+.imgBox{
+	width:90%;
+	height: 66%;
+	background: #fdb812;
+	padding: 2% 5%;
+}
+.imgBox img{
+	width: 100%;
+	height:100% ;
+}
+.contert1-text{
+	width: 100%;
+	height: 1.75rem%;
+	background: #1a2a38;
+	display: flex;
+	justify-content:space-between;
+	line-height: 1.76rem;
+	text-align: center;
+	border-top: 2px dashed #fdb812;
+}
+.contert1-text .span1{
+	width: 5rem;
+	height: 100%;
+	color: #fdb812;
+	font-size: 0.75rem;
+}
+.contert1-text .span2{
+	width: 3rem;
+	height: 100%;
+	font-size: 0.7rem;
+	color: #5e7386;
+}
+/*汽车分类*/
+.fenClass-box{
+	width: 100%;
+	height: 16.1rem;
+	padding: 3% 0;
+	font-size: 0.7rem;
+	border-bottom: 2px dashed #fdb812;
+}
+.fenClass{
+	width: 90%;
+	height: 100%;
+	margin: auto;
+	/*border: 1px solid black;*/
+}
+.picCar-box{
+	width: 100%;
+	height: 95%;
+	display: flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	/*border: 1px solid black;*/
+}
+.car{
+	width: 48%;
+	height: 50%;
+	/*background: yellow;*/
+}
+.car img{
+	height: 70%;
+}
+.picCar-box strong{
+	display: block;
+	margin: auto;
+	color: #000000;
+	font-size: 0.6rem;
+}
+.picCar-box em{
+	display: block;
+	margin: auto;
+	color: #ff6c00;
+	font-size: 0.6rem;
+}
+/*第二黄背景*/
+.evaluation{
+	width: 100%;
+	height: 10rem;
+	background: #fdb811;
+	border-top: 1px solid #1a2a38;
+	border-bottom: 1px solid #1a2a38;
+}
+.evaluation ul{
+	width: 100%;
+	height: 10rem;
+	margin-top:3px ;
+}
+.evaluation li{
+	display: flex;
+	line-height: 1.9rem;
+	font-size: 0.6rem;
+	border-bottom:  1px dotted #bd890d;
+	justify-content:space-between;
+}
+.evaluation span{
+	display: block;
+	width: 5rem;
+	height: 1.9rem;
+}
+.evaluation .span1{
+	width: 6rem;
+	height: 1.9rem;
+	text-align: center;
+	color: #000000;
+}
+/*中间三辆汽车*/
+.preferential-box{
+	width: 100%;
+	height: 14.2rem;	
+	padding: 3% 0;
+	border-bottom: 2px dashed #fdb812;
+}
+.preferential{
+	width: 90%;
+	height: 100%;
+	margin: auto;
+}
+.preferential li{
+	width: 100%;
+	height: 4.5rem;
+	margin-top: 5px;
+	display: flex;
+	justify-content:space-between;
+}
+.preferential span{
+	display: block;
+}
+.preferential .span1{
+	width: 38%;
+	height: 100%;
+}
+.preferential .span2{
+	width: 57.5%;
+	height: 100%;
+	font-size: 0.7rem;
+}
+.preferential .span2 h2{
+	width: 100%;
+	color: #000;
+	overflow: hidden;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    /*文字超出自动省略号隐藏*/
+}
+.preferential .span2 strong{
+	width: 100%;
+	height: 1.2rem;
+	display: block;
+	color: #ff9000;
+    font-size: 0.5rem;
+	line-height: 0.6rem;
+	margin: 2px 0;
+}
+.preferential .span2 p{
+	color: #989898;
+	font-size: 0.65rem;
+	line-height: 0.7rem;
+}
+/*第三个黄背景*/
+.textThree{
+	width: 100%;
+	height: 10rem;
+	background: #fdb811;
+	display: flex;
+	align-items: center;
+	/*弹性垂直居中*/
+}
+.textThree p{
+	width: 90%;
+	height: 90%;
+	margin: auto;
+	font-size: 0.6rem;
+	line-height: 1.13rem;
+	color: #000000;
+}
+/*evaluation最后，引用上面，特殊改*/
+.evaluation2Ul li{
+	border-bottom:  1px dotted #CCCCCC;
+}
+/*技术支持*/
+.end{
+	width: 100%;
+	height: 1.9rem;
+	background: #fdb811;
+	display: flex;
+	justify-content:space-between;
+	
+}
+.end p{
+	width: 10.5rem;
+	height: 1.8rem;
+	font-size: 0.7rem;
+	margin: auto;
+	color: #132330;
+	line-height: 1.8rem;
+}
+/*结尾导航*/
+.footNav{
+	width: 100%;
+	height: 2.5rem;
+	background: #132330;
+	position: fixed;
+	bottom: 0rem;
+	display: flex;
+}
+.footPic{
+	width: 25%;
+	height: 100%;
+	flex: 1;
+	text-align: center;
+}
+.footPic span{
+	display: block;
+	width: 100%;
+	color: #FFFFFF;
+	font-size: 0.65rem;
+	line-height: 0.6rem;
+}
+.iconfont3{
+	display: block;
+	width: 100%;
+	height: 70%;
+	color: #FFFFFF;
+	font-size: 1.5rem;
+	 font-family: "iconfont";
+}
+
+
+
+
+
+
+
+
+
+
+

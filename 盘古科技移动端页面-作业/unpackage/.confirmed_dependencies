@@ -1,0 +1,29 @@
+{
+	"index.html": {
+		"resources": [
+			"css/new_file.css",
+			"js/new_file.js",
+			"img/menu.png",
+			"img/logo.png",
+			"img/nav.png",
+			"img/11.jpg",
+			"img/pic2.png",
+			"img/pic5.png",
+			"js/jquery-2.1.0.js",
+			"img/pic8.png",
+			"img/pic4.png",
+			"img/pic1.png",
+			"img/pic6.png",
+			"img/pic3.png",
+			"img/pic7.png",
+			"js/jquery-3.2.0.js",
+			"img/12.jpg",
+			"img/8.jpg",
+			"img/2.gif",
+			"img/6.jpg",
+			"img/4.jpg",
+			"img/3.jpg",
+			"img/5.jpg"
+		]
+	}
+}
